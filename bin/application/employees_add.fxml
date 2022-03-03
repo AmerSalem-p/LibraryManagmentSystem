@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller2">
+   <children>
+      <Label alignment="CENTER" prefHeight="59.0" prefWidth="696.0" text="Add Employee">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Line endX="590.0" startX="-100.0" stroke="#0a00c2" strokeType="OUTSIDE" strokeWidth="2.0" />
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.79998779296875" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.39996719360352" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.4000244140625" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.40002441406244" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="120.0" minHeight="4.599999809265142" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="122.0" prefWidth="164.0" text="ID:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="134.0" prefWidth="162.0" text="Name:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="131.0" prefWidth="164.0" text="Job:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="101.0" prefWidth="174.0" text="Age:" GridPane.columnIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="101.0" prefWidth="192.0" text="Salary:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="101.0" prefWidth="218.0" text="Email:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="101.0" prefWidth="214.0" text="Section:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="101.0" prefWidth="197.0" text="Address" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="edID" fx:id="edID" GridPane.columnIndex="1" />
+            <TextField id="edName" fx:id="edName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="edJob" fx:id="edJob" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="edAddress" fx:id="edAddress" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField id="edAge" fx:id="edAge" GridPane.columnIndex="3" />
+            <TextField id="edSalary" fx:id="edSalary" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField id="edEmail" fx:id="edEmail" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField id="edSection" fx:id="edSection" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="btAddEmployee" alignment="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#addEmployee2" prefHeight="39.0" prefWidth="718.0" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

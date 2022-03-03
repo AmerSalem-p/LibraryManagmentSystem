@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="750.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1054.0" />
+      <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="106.0" prefWidth="1108.0" text="Employees" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="649.0" onMouseClicked="#Back" prefHeight="35.0" prefWidth="58.0" text="Back" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="48.0" layoutX="30.0" layoutY="645.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/backWHITE.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lv" layoutX="30.0" layoutY="234.0" prefHeight="382.0" prefWidth="650.0" />
+      <GridPane layoutX="37.0" layoutY="196.0" prefHeight="38.0" prefWidth="640.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.5999755859375" minWidth="10.0" prefWidth="42.00001068115235" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.46667861938477" minWidth="10.0" prefWidth="65.19998931884766" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.2000488281249" minWidth="10.0" prefWidth="297.1333862304688" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.800048828125" minWidth="10.0" prefWidth="60.06661376953127" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.8000732421875" minWidth="10.0" prefWidth="99.26662597656252" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.8000732421875" minWidth="10.0" prefWidth="81.13337402343745" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="38.0" prefWidth="28.0" text="Id" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="77.0" text="Photo" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="20.0" prefHeight="39.0" prefWidth="100.0" text="Job" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="550.0" layoutY="20.0" prefHeight="39.0" prefWidth="100.0" text="Address" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="240.0" text="Name/Email" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="Status" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <VBox layoutX="714.0" layoutY="235.0" prefHeight="445.0" prefWidth="321.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="212.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/userWhite.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="46.0" prefWidth="178.0" text="Personal Information" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btReactivate" mnemonicParsing="false" onAction="#Reactivate" text="ReActivate" />
+               </children>
+            </HBox>
+            <GridPane maxWidth="400.0" prefHeight="86.0" prefWidth="219.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="355.20009765624997" minWidth="10.0" prefWidth="213.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="36.799978637695304" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name:" textFill="WHITE" />
+                  <Label text="Age:" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Gender:" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Text fx:id="tName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" />
+                  <Text fx:id="tAge" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="tGender" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfName" visible="false" GridPane.columnIndex="1" />
+                  <DatePicker fx:id="dpDate" prefHeight="26.0" prefWidth="239.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="cbGender" prefHeight="26.0" prefWidth="233.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <HBox prefHeight="28.0" prefWidth="212.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/callWhite.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Contatct Information" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="87.0" prefWidth="398.0" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.26666259765625" minWidth="10.0" prefWidth="213.33334960937495" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Phone Number:" textFill="WHITE" />
+                  <Label text="Address:" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Email:" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Text fx:id="tPhone" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" />
+                  <Text fx:id="tAddress" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="tEmail" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfPhone" visible="false" GridPane.columnIndex="1" />
+                  <TextField fx:id="tfEmail" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="cbAddress" prefHeight="26.0" prefWidth="235.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <HBox prefHeight="28.0" prefWidth="212.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/WorkWhite.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="27.0" prefWidth="170.0" text="Work Information" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane prefHeight="107.0" prefWidth="400.0" vgap="25.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.73334960937495" minWidth="10.0" prefWidth="213.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Id:" textFill="WHITE" />
+                  <Label text="Job:" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label text="Section:" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Text fx:id="tId" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" />
+                  <Text fx:id="tJob" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="tSection" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text fx:id="tSalary" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Salary:" textFill="WHITE" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfSalary" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfJob" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="cbSection" prefHeight="26.0" prefWidth="254.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="392.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/SUBS.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivPhoto" fitHeight="100.0" fitWidth="136.0" layoutX="802.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/CIRCLE.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="43.0" layoutY="124.0" prefHeight="49.0" prefWidth="443.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="48.0" onMouseClicked="#Refresh" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/images/refresh_WHITE.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="cbSearch" prefHeight="33.0" prefWidth="162.0" />
+            <TextField fx:id="tfSearch" prefHeight="33.0" prefWidth="149.0" />
+            <ImageView fitHeight="42.0" fitWidth="200.0" onMouseClicked="#searchEmployee" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/images/search_White.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fx:id="ivEdit" fitHeight="43.0" fitWidth="36.0" layoutX="917.0" layoutY="161.0" onMouseClicked="#Edit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/pencilWHITE.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="823.0" layoutY="700.0" prefHeight="30.0" prefWidth="213.0" spacing="70.0">
+         <children>
+            <Button fx:id="btCancel" mnemonicParsing="false" onAction="#Cancel" prefHeight="30.0" prefWidth="80.0" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btDone" lineSpacing="40.0" mnemonicParsing="false" onAction="#Edit2" prefHeight="30.0" prefWidth="76.0" text="Done">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btAddEmployee" layoutX="714.0" layoutY="700.0" lineSpacing="40.0" mnemonicParsing="false" onAction="#addEmployee2" prefHeight="30.0" prefWidth="80.0" text="Add">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="51.0" fitWidth="48.0" layoutX="557.0" layoutY="642.0" onMouseClicked="#addEmployee" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="782.0" layoutY="162.0" onMouseClicked="#removeEmployee" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/REMOVE.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="622.0" layoutY="649.0" onMouseClicked="#Back" prefHeight="35.0" prefWidth="58.0" text="Add" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

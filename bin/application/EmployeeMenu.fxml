@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeMenuController">
+   <children>
+      <ImageView id="books" fitHeight="168.0" fitWidth="184.0" layoutX="74.0" layoutY="156.0" onMouseClicked="#openBooks" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/books2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="184.0" layoutX="74.0" layoutY="328.0" onMouseClicked="#openSubscribers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/Subscribers2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="184.0" layoutX="278.0" layoutY="328.0" onMouseClicked="#openBorrow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/Borrow_Ret.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="184.0" layoutX="480.0" layoutY="328.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/EXI_RED.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="531.0" layoutX="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="184.0" layoutX="278.0" layoutY="156.0" onMouseClicked="#openFines" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/FINE_RED.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="184.0" layoutX="480.0" layoutY="156.0" onMouseClicked="#openPassword" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/Password_BLUE.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="BOTTOM_CENTER" layoutX="87.0" layoutY="486.0" prefHeight="55.0" prefWidth="662.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="150.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/id.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tEmpId" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="49.8427734375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="282.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/nameBule.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tEmpName" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/clockBlue.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tTime" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
